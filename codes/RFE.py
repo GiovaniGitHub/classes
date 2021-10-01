@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from datetime import datetime
 
-df = pd.read_csv('/home/nobrega/Documentos/archive/ANSUR II MALE Public.csv', encoding='latin').drop(
+df = pd.read_csv('../datasets/ANSUR II MALE Public.csv', encoding='latin').drop(
     ['subjectid', 'weightkg'], axis=1)
 
 df = df.select_dtypes(include='number')
